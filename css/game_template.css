@@ -1,0 +1,2221 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #002347; /*д.б. #002347, плохо сочетается с фоном неоновых стрелок; */
+    color: #fff;
+}
+
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+    background-color: /*red*/;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    margin: 0;
+}
+
+p, 
+.casino_name_link p {
+    line-height: 140%;
+    opacity: 0.8;
+    margin-bottom: 0.625rem;
+}
+
+.casino_name_link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.casino_name_link p:hover {
+    color: #fd8607;
+    /*font-weight: 600;*/
+    transition: 1s;
+}
+
+.playing_area_contain, 
+.games, 
+.reviews, 
+.add_review, 
+.faq, 
+.affiliate_programs {
+    margin-bottom: 150px;
+}
+
+
+
+/* --- Шапка --- */ 
+
+.all_casinos_background {
+    background-image: url(../images/all_casinos/header_border_w_card_suits.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    height: 690px;
+    margin-bottom: 0;
+}
+
+.upper_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.burger_icon, 
+div.phones_adaptive_menu {
+    display: none;
+}
+
+i.burger {
+    position: absolute;
+}
+
+.pokies_best_logo {
+    background-image: url(../images/logos/pokies_best_logo.png);
+    background-repeat: no-repeat;
+    width: 87px;
+    height: 63px;
+    transition: 0.7s;
+}
+
+.pokies_best_logo:hover {
+    transform: scale(1.2) translateX(10px);
+    filter: opacity(0.6);
+}
+
+.bttn_border_gradient {
+    background: linear-gradient(90deg, #00B09B 0%, #96C93D 100%);
+    padding: 1px; /* Толщина границы */
+    min-height: 56px;
+    border-radius: 3px;
+}
+
+.bttn_background {
+    background: #002347;
+}
+
+.bttn {
+    padding: 20px 50px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.bttn_border_gradient, 
+.bttn_background, 
+.bttn {
+    display: inline-block;
+}
+
+#header_bttn {
+    background: #000f22;
+}
+
+.navigation_links {
+    text-transform: capitalize;
+}
+
+.navigation_links a {
+    margin-right: 50px;
+}
+
+.navigation_links a:nth-child(3) {
+    margin-right: 0;
+}
+
+.navigation_links a:hover {
+    color: #96C93D;
+    border-bottom: 3px solid #96C93D;
+	padding-bottom: 20px;
+    transition: 0.4s
+}
+
+.navigation_links a, 
+.bttn {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bttn:hover,
+#header_bttn:hover {
+    background: linear-gradient(90deg, #00B09B 0%, #96C93D 100%);
+    box-shadow: 2px 2px 30px #87C646;
+    transition: 0.1s;
+}
+
+h1 {
+    font-size: 3.4375rem;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 0;
+}
+
+.select:hover {
+    cursor: pointer;
+}
+
+.play_now_bttn {
+    background: linear-gradient(90deg, #00B09B 0%, #96C93D 100%);
+}
+
+.play_now_bttn:hover {
+    box-shadow: 2px 2px 30px #87C646;
+    transition: 0.1s;
+}
+
+/* 
+Выравнивание изображений внутри контейнеров
+*/
+
+.casino_raiting_like {
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center center;
+}
+
+.casino_list_item {
+    display: flex;
+    justify-content: center;
+    flex-wrap: ; /* wrap */
+    margin-bottom: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.casino_name_image {
+    margin-right: 40px;
+}
+
+header .casino_name_image {
+    margin-right: 0; / * отмена предыдущего пункта для лого в шапке (совпадают классы) */
+}
+
+.casino_name_image:hover {
+    transform: scale(1.2);
+    filter: sepia(0.6);
+    transition: 0.5s;
+}
+
+.rating_5_0, 
+.rating_4_0, 
+.rating_3_0,
+.rating_2_0,
+.rating_1_0 {
+    width: 141px;
+    height: 21px;
+}
+
+.rating_5_0 {
+    background-image: url(../images/icons/rating_5.0.png);
+}
+
+.rating_4_0 {
+    background-image: url(../images/icons/rating_4.0.png);
+}
+
+.bonus_image {
+    background-image: url(../images/icons/welcome_bonus_icon.png);
+    width: 46px;
+    height: 45px;
+}
+
+.games_count_image {
+    background-image: url(../images/icons/games_icon.png);
+    width: 45px;
+    height: 45px;
+}
+
+.casino_name, 
+.bonus_image, 
+.games_count_image {
+    margin: 0 auto;
+}
+
+.casinos_list_bttn {
+    display: flex;
+    flex-direction: column;
+}
+
+.casinos_list_bttn .bttn_border_gradient {
+    margin-bottom: 20px;
+}
+
+.casinos_list_bttn .bttn_border_gradient:last-child {
+    margin-bottom: 0;
+}
+
+.bttn_center_alignment { /* выравнивание кнопок по центру */
+    width: 100%;
+    text-align: center;
+}
+
+.casino_name_image, 
+.amount, 
+.count {
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.best_casinos_list .bttn_center_alignment {
+    margin-top: 50px;
+}
+
+.bonus {
+    position: relative;
+}
+
+
+
+/* --- Зона игрового контента --- */
+
+iframe {
+    width: 750px;
+    height: 486px;
+    margin-bottom: 50px;
+}
+
+.games_descr p {
+    max-width: 650px;
+}
+
+
+
+
+
+
+.playing_area_contain {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.add_top_casinos_list h3 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.reviews_list {
+	overflow: hidden;
+	position: relative;    
+}
+
+.reviews_list.hide {
+	height: 450px;
+}
+
+
+
+/* --- Casino Details --- */
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 70px;
+}
+
+.casino_details_contain_item {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 40px;
+}
+
+.casino_details_contain_item_icon {
+    margin-right: 10px;
+    position: relative;
+    top: 5px;
+}
+
+.casino_detail {
+    font-size: 1.125rem;
+    font-weight: 600;
+    min-width: 300px;
+}
+
+.casino_detail_tag {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    padding: 5px 20px 6px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #A776C8; 
+    border-radius: 3px;
+    transition: background 0.5s ease-in-out;
+}
+
+.casino_detail_tag:hover {
+    background: linear-gradient(180deg, #C93F8B 0%, #A776C8 100%);
+    transition: background 2s
+}
+
+
+
+/* --- Games List --- */
+
+.games {
+    
+}
+
+.games h2 {
+    display: ;
+}
+
+.games_list {
+    text-align: center;
+    background-color: ;
+    
+}
+
+
+.games_list_menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 0 24px;
+}
+
+.games_list_item {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border: 2px solid transparent; /* убирает сдвиг при наведении */
+}
+
+.games_list_item a img {
+    width: 210px;
+    height: 210px;
+}
+
+.games_list_item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.games_list_item:hover {
+    background-color: #000102;
+    /*
+    mix-blend-mode: luminosity;
+    */
+    border-radius: 10px;
+    box-sizing: border-box;
+    border-color: #00B09B;
+    transform: scale(1.05) perspective(250px) rotateY(5deg);
+    filter: sepia(0.7);
+    transition: 0.5s;
+}
+
+.games_list .bttn_border_gradient {
+    margin-top: 40px;
+}
+
+.games_search, 
+.select_category {
+    border-color: #00B09B;
+    border-radius: 10px;
+    background: linear-gradient(91.6deg, #0D2C5E 0%, #173E66 100%);
+    opacity: 0.8;
+    color: #fff;
+    padding: 16px 10px;
+    width: 260px;
+}
+
+.select_category {
+    text-transform: capitalize;
+    background-color: #173E66;
+    cursor: pointer;
+}
+
+.select_category option {
+    margin: 15px;
+}
+
+
+
+/* --- Reviews --- */ 
+
+.reviews h2 {
+    margin-bottom: 30px;
+}
+
+.reviews .filters {
+    margin-bottom: 50px;
+    font-size: 1.125rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.select_casino {
+    padding: 8px 15px;
+    font-size: 1rem;
+    border-radius: 3px;
+}
+
+.review_contain {
+    background: linear-gradient(to bottom, #00173B 0%, #0D3054 100%);
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    margin-bottom: 30px;
+}
+
+.avatar {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 166px;
+    height: 66px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#review_1 {
+    background-image: url(../images/avatars/default_avatar_photo_1.png);
+}
+
+#review_2 {
+    background-image: url(../images/avatars/default_avatar_photo_2.png);
+}
+
+#review_3 {
+    background-image: url(../images/avatars/default_avatar_photo_3.png);
+}
+
+.name_and_date {
+    display: inline-block;
+    min-width: 150px;
+    background-color: ;
+    padding-top: 10px;
+}
+
+.reviewers_name {
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.reviews_date {
+    margin-top: 0;
+}
+
+.reviews_like, 
+.reviews_like_half {
+    width: 14px;
+    height: 14px;
+}
+
+.reviews_like {
+    background-image: url(../images/icons/reviews_like.png);
+}
+
+.reviews_like_half {
+    background-image: url(../images/icons/reviews_like_half.png);
+}
+
+.casino_rating {
+    padding-left: 20px;
+}
+
+.casino_rating_element {
+    display: inline-block;
+}
+
+.adaptive_casino_rating {
+    display: none;
+}
+
+.content_block {
+    width: 95%;
+}
+
+.content_block p {
+    padding: 20px;
+}
+
+.reviews_bttns {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.reviews_date {
+    opacity: 0.5;
+}
+
+/* скрытие текста */
+
+.content_block {
+	overflow: hidden;
+	position: relative;    
+}
+
+.content_block.hide {
+	height: 75px;
+}
+
+.content_block.hide:after{
+	content: "";
+	display: block;
+	height: 30px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    /*
+	background-image: linear-gradient(to bottom, #00173B 0%, #0D3054 40%);
+    */
+}
+
+/* Ссылка-Кнопка */
+
+.content_toggle {
+	display: inline-block;
+	padding: 15px 20px;
+	text-decoration: none;
+	color: #fff;
+    margin-top: 20px;
+	margin-bottom: 20px;
+    text-decoration: underline;
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.content_toggle:hover {
+	color: #fff;
+	background-color: #a776c8;
+    border-radius: 5px;
+    opacity: 1;
+}
+.content_toggle:active {
+	background: #34106d;
+}
+
+
+/* --- переключение отзывов --- */        
+/* Контейнер отзывов */
+.slideshow_container {
+    margin: auto;
+}            
+
+
+/* Анимация исчезновения */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .3}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .3}
+    to {opacity: 1}
+}
+
+/* доп */
+
+.name_and_date_adaptive {
+    display: none;
+}
+
+.casino_nfo {
+    height: 300px;
+    background: linear-gradient(91.6deg, #00173B 0%, #0D3054 100.2%);
+    box-shadow: 10px 10px 20px rgba(0, 23, 59, 0.25), -10px -10px 20px rgba(13, 48, 84, 0.25);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.casino_nfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.casino_overall_rating_box_header div, 
+.casino_overall_rating_box_header p {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.casino_overall_rating_box + div {
+    display: flex;
+}
+
+.casino_nfo .features_contain {
+    margin-right: 80px;
+}
+
+.features .numeral_rating {
+    min-width: auto;
+    margin-right: 10px;
+}
+
+.numeral_rating {
+    display: inline-block;
+    font-weight: 600;
+}
+
+.histogram_rating_box_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hr100 {
+    background: linear-gradient(91.6deg, #0D2C5E 0%, #173E66 100%);
+    width: 200px;
+    height: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.hr100, 
+.relative_rating {
+    margin-right: 10px;
+}
+
+.relative_rating {
+    min-width: 60px;
+}
+
+.histogram_rating_box_item p:last-child {
+    margin: 0 auto;
+}
+
+.hr75, .hr20, .hr5 {
+    position: absolute;
+    background-color: #E7D325;
+    height: 15px;
+    border-radius: 10px;
+}
+
+.hr75 {
+    width: 75%;
+}
+
+.hr20 {
+    width: 20%;
+}
+
+.hr5 {
+    width: 5%;
+}
+
+/* --- Add a Review --- */
+
+.add_review h2 + p + p {
+    font-size: 1.125rem;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+
+.log_in_link {
+    color: #A776C8;
+    font-weight: 600;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.log_in_link:hover {
+    padding: 10px 2px;
+    color: #fff;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #00B09B 0%, #96C93D 100%);
+    box-shadow: 2px 2px 30px #87C646;
+    
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.add_review_content_box {
+    width: 70%;
+}
+
+.add_review .subscribing {
+    width: 90%;
+}
+
+.add_review .select_casino {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.add_review .email_input, 
+.save_data_agree {
+    margin: 0 0 20px;
+    font-size: 0.875rem;
+}
+
+.save_data_agree input {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 3px;
+}
+
+textarea {
+    height: 160px;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.features > p {
+    margin: 0;
+    margin-right: 30px;
+    min-width: 100px;
+}
+
+.full_heart {
+    background-image: url(../images/icons/heart_full.png);
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.full_heart:hover {
+    opacity: 1;
+}
+
+.features_contain {
+    margin: 40px 0;
+}
+
+
+/* --- FAQ --- */
+
+.faq {
+    background-image: url(../images/backgrounds/elizabeth-quay-bridge-MU3L5JB%201.png);
+    height: 1078px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.accordion {
+    display: block;
+    width: 550px;
+    background-color: #000102;
+    opacity: 0.7;
+    color: #fff;
+    font-size: 1.125rem;
+    cursor: pointer;
+    padding: 1rem;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom: 5px;
+}
+
+.active,
+.accordion:hover {
+    background-color: #002347; 
+}
+
+.accordion:after {
+    content: '';
+    background-image: url(../images/icons/accord_opening.png);
+    width: 25px;
+    height: 25px;
+    float: right;
+}
+
+.active:after {
+    content: '';  /* "\2212" */
+    background-image: url(../images/icons/accord_closing.png);
+    width: 17px;
+    height: 17px;
+}
+
+.panel {
+    padding: 0;
+    display: none;
+    background-color: #000102;
+    overflow: hidden;
+    width: 550px;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.faq h2 {
+    padding-top: 75px;
+    margin-bottom: 0;
+}
+
+.faq_bttns {
+    display: inline-block;
+    width: 550px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.faq_bttns .bttn_border_gradient, 
+.bttn_center_alignment .bttn_border_gradient, 
+.reviews_bttns .bttn_border_gradient {
+    margin-right: 20px; /* расстояние между кнопками */
+}
+
+.faq_bttns .bttn_border_gradient:last-child, 
+.bttn_center_alignment .bttn_border_gradient:last-child, 
+.reviews_bttns .bttn_border_gradient:last-child {
+    margin-right: 0; /* убирается отступ крайней правой кнопки */
+}
+
+.faq .wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.australian_flag {
+    background-image: url(../images/backgrounds/australia_flag.png);
+    width: 228px;
+    height: 228px;
+    display: none;
+    position: relative;
+    left: 100px;
+    top: 50px;
+}
+
+.australia {
+    background-image: url(../images/backgrounds/australia.png);
+    width: 242px;
+    height: 242px;
+    display: none;
+    position: absolute;
+    left: 600px;
+    bottom: -100px;
+}
+
+
+
+/* --- Affiliate Programs --- */
+
+.affiliate_programs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.affiliate_programs_img {
+    background-image: url(../images/backgrounds/brisbane-australia-dec-23-2016-colorful-fireworks--P55CDF6%201.png);
+    width: 458px;
+    height: 635px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.affiliate_programs p {
+    max-width: 650px;
+}
+
+
+
+/* --- Подвал --- */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+   	align-items: flex-start;
+    padding-bottom: 85px;
+}
+
+footer h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.subscribing {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.footer_navigation_links {
+    list-style-type: none;
+    margin-top: 0;
+}
+
+.footer_navigation_links li a:hover {
+    border-bottom: 3px solid #CBA982;
+	padding-bottom: 5px;
+    color: #96C93D;
+    border-bottom: 3px solid #96C93D;
+}
+
+.footer_navigation_links li {
+    margin-top: 15px;
+}
+
+.footer_navigation_links li:first-child {
+    margin-top: 0;
+}
+
+.email_subscribing_bttn {
+    margin-top: 20px;
+}
+
+.email_subscribing_bttn:hover {
+
+}
+
+.email_input {
+    padding: 15px 10px;
+    border-color: #00B09B;
+    border-radius: 10px;
+    background: linear-gradient(91.6deg, #0D2C5E 0%, #173E66 100%);
+    opacity: 0.8;
+    color: #fff;    
+}
+
+.subscribing .bttn_border_gradient {
+    margin-top: 20px;
+}
+
+.upper_bttn {
+    background-image: url(../images/icons/upper_bttn.png);
+    width: 55px;
+    height: 55px;
+}
+
+.upper_bttn:hover {
+    filter: opacity(0.82);
+    transition: 0.5s;
+}
+
+.adaptive_subscribing {
+    display: none;
+}
+
+.adaptive_subscribing_ipad_pro_vert {
+    display: none;
+}
+
+.subscribing_footer {
+    margin-top: -100px; /* уменьшает отступ до низа страницы */
+}
+
+
+
+/* Тень для нескольких элементов */
+
+.burger_icon, 
+.email_input,
+.games_search, 
+.review_contain,
+.select_category, 
+.casino_list_item_contain {
+	box-shadow: 10px 10px 20px rgba(0, 23, 59, 0.25), -10px -10px 20px rgba(13, 48, 84, 0.25);
+}
+
+
+
+/* --- Адаптив --- */
+
+@media (max-width: 1194px) {
+    
+    .wrapper {
+        max-width: 960px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .add_top_casinos_list {
+        display: none;
+    }
+    
+    .games, 
+    .reviews, 
+    .add_review, 
+    .faq, 
+    .affiliate_programs {
+        margin-bottom: 100px;
+    }
+    
+    iframe {
+        width: 80vw;
+        height: 53vw;
+    }
+    
+    /*
+    iframe {
+        width: 720px;
+        height: 466px;
+        margin: 0 auto;
+        min-height: 292px;
+        max-height: 466px;
+    }
+    */
+    
+    .games_descr p {
+        max-width: 70%;
+    }
+    
+    .all_casinos_background {
+        background-image: url(../images/all_casinos/header_border_w_card_suits_adaptive.svg);
+        background-repeat: no-repeat;
+        background-size: 70% auto;
+        background-position: center center;
+        height: 420px;
+        margin: -20px;
+        padding-top: 400px; /* работает в связке с отрицательным margin-top у h1 */
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 0;
+        margin-top: -350px;
+    }
+    
+    h2 {
+        font-size: 2.25rem;
+    }
+    
+    h1, h2 {
+        margin-bottom: 50px;
+    }
+    
+    .bonus, 
+    .games_count {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tooltip {
+        display: ; /* none */
+        top: 115px;
+        left: 75px;
+        z-index: 9999;
+    }
+    
+    .amount, 
+    .amount + p,
+    .games_count, 
+    .games_count + p {
+        text-align: center;
+    }
+    
+    .casino_nfo .features_contain {
+        margin-right: 30px;
+    }
+  
+    .casino_list_item {
+        margin: 30px 0px;
+        padding: 20px;
+    }
+    
+    .amount, 
+    .amount + p {
+        width: 80px;
+        
+    }
+    
+    .games_list_item a img {
+        width: 170px;
+        height: 170px;
+    }
+    
+    .name_and_date {
+        display: none;
+    }
+    
+    .name_and_date_adaptive {
+        display: flex;
+        align-items: baseline;
+        padding-left: 20px;
+        padding-top: 0;
+    }
+    
+    .reviewers_name, .adaptive_casino_rating {
+        margin-right: 10px;
+    }
+    
+    .casino_rating {
+        display: none;
+        padding-left: 0;
+    }
+    
+    .adaptive_casino_rating {
+        display: block;
+    }
+    
+    .australia, 
+    .australian_flag {
+        display: block;
+    }
+    
+    .reviews_list.hide {
+        height: 480px;
+    }
+    
+    .faq {
+        background-image: url(../); /* убирает фон */
+        height: auto; /* подгоняет высоту по содержимому контейнера */
+    }
+
+    .affiliate_programs_img {
+        width: 307px;
+        height: 425px;
+    }
+    
+    .desktop_subscribing {
+        display: none;
+    }
+    
+    .adaptive_subscribing {
+        display: block;
+    }
+    
+    .dot {
+        display: inline-block;
+    }
+    
+    .prev, .next {
+        display: none;
+    }
+    
+    .affiliate_programs_description p {
+        font-size: 0.875rem;
+        max-width: 590px;
+        /*
+        margin-right: 65px;
+        */
+        
+    }
+    
+    .faq h2 {
+        padding-top: 0;
+    }
+    
+} /* ^^^ 1194px ^^^ */
+
+
+
+@media (max-width: 1110px) {
+    
+    wrapper {
+        max-width: 900px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    header {
+        background-position: left;
+        height: 820px;
+    }
+    
+    .description {
+        margin-top: 80px;
+    }
+    
+    .rating_5_0, .rating_4_0 {
+        display: none;
+    }
+    
+    .under_logo_rating {
+        display: block;
+    }
+    
+    .casino_name {
+        margin: 0 auto;
+    }
+    
+    .background_left_arrow {
+        width: 559px;
+        height: 529px;
+        top: -170px;
+        left: -140px;
+    }
+    
+    .background_right_arrow {
+        width: 555px;
+        height: 604px;
+        left: -175px;
+        top: -240px
+    }
+    
+    .background_left_arrow,
+    .background_right_arrow {
+        background-position: center; 
+        background-size: 100% 100%; /* cover */
+        background-repeat: no-repeat; 
+    }
+}  /* ^^^ 1110px ^^^ */
+
+
+
+@media (max-width: 948px) {
+    
+   .casino_nfo {
+       flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+       height: auto;
+    }
+    
+    .casino_overall_rating_box {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+    }
+    
+    .casino_overall_rating_box_header {
+        margin-right: 40px;
+    }
+    
+    .casino_overall_rating_box + div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .casino_nfo .features_contain {
+       margin-right: 80px;
+    }
+    
+} /* ^^^ 948px ^^^ */
+
+
+
+@media (max-width: 880px) {
+    
+
+    
+    
+} /* ^^^ 880px ^^^ */
+
+
+
+@media (max-width: 834px) {
+    
+    .wrapper {
+        max-width: 720px;
+    }
+    
+    iframe {
+        width: 86vw;
+        height: 57vw;
+    }
+    
+    h2,
+    .reviews h2,
+    .faq h2 {
+        margin-bottom: 20px;
+    }
+    
+    .affiliate_programs h2 {
+        margin-bottom: 50px;
+    }
+    
+    .bttn {
+        font-size: 0.875rem;
+    }
+    
+    .amount + p, 
+    .count + p, 
+    .features_contain p,
+    .casino_nfo p {
+        font-size: 0.875rem;
+    }
+    
+    .casino_overall_rating_box_header p {
+        font-size: 1rem;
+    }
+    
+    .features p {
+        min-width: 160px;;
+    }
+    
+    .casino_nfo .features_contain {
+        margin-right: 40px;
+    }
+    
+    .casino_detail {
+        min-width: 200px;
+        font-size: 1rem;
+    }
+    
+    .casino_detail_tag {
+        font-size: 0.875rem;
+    }
+
+    .games_list {
+        width: 100%
+    }
+    
+    .games_list_item a img {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .games, 
+    .games h2 {
+        display: block;
+    }
+    
+    .avatar {
+        width: 290px;
+    }
+    
+    .australia, 
+    .australian_flag {
+        width: 180px;
+        height: 180px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .australian_flag {
+        left: 0px;
+    }
+    
+    .australia {
+        left: 550px;
+    }
+    
+    .adaptive_subscribing {
+        display: none;
+    }
+    
+    .adaptive_subscribing_ipad_pro_vert {
+        display: block;
+    }
+    
+    .subscribing_wrapper_flex_box .subscribing {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    
+    .adaptive_subscribing_ipad_pro_vert .email_input {
+        margin-right: 20px;
+    }
+    
+    .subscribing_footer {
+        margin-top: -60px;
+    }
+    
+} /* ^^^ 834px ^^^ */
+
+
+@media (max-width: 720px) {
+    
+    .wrapper {
+        max-width: 700px;
+    }
+   
+    .background_left_arrow {
+        left: -170px;
+    }
+    
+    .background_right_arrow {
+        left: -90px;
+    }
+    
+    .avatar {
+        width: 290px;
+    }
+    
+    .accordion, .faq p {
+        width: 400px;
+    }
+    
+    .faq_bttns {
+        width: 211px;
+    }
+    
+    .faq_bttns .bttn_border_gradient {
+        width: 100%;
+        text-align: center;
+        margin-left: 45%;
+        margin-bottom: 30px;
+    }
+    
+    .australia, 
+    .australian_flag {
+        position: absolute;
+        left: 420px;
+    }
+
+    
+} /* ^^^ 720px ^^^ */
+
+
+
+@media (max-width: 670px) {
+    
+    .all_casinos_background {
+        padding-top: 600px; /* работает в связке с отрицательным margin-top у h1 */
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        margin-top: -520px;
+        margin-bottom: 30px;
+    }
+    
+    .casino_list_item {
+        flex-wrap: wrap;
+    }
+    
+    .casinos_list_bttn {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-top: 40px;
+        margin-top: 30px;
+    }
+    
+    .tooltip {
+        display: ; /* none */
+        top: 111px;
+        left: 70px;
+        z-index: 9999;
+    }
+    
+    .amount + p {
+        text-decoration: underline;
+        text-decoration-style: dashed;
+    }
+    
+    .amount, 
+    .amount + p,
+    .games_count, 
+    .games_count + p {
+        text-align: center;
+    }
+    
+    .casinos_list_bttn .bttn_border_gradient {
+        margin-left: 30px;
+    }
+
+    .casinos_list_bttn .bttn_border_gradient:last-child {
+        margin-left: 0;
+    }
+    
+    .casinos_list.hide {
+        height: 1295px;
+    }
+    
+    .games h2 {
+        margin-bottom: 20px;
+    }
+    
+    .games_list_menu {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 0;
+        align-items: flex-start;
+    }    
+    
+    .casino_overall_rating_box + div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .casino_nfo .features_contain {
+       margin-right: 0;
+    }
+    
+    .histogram_rating_box {
+        margin-bottom: 40px;
+    }
+    
+    .select_games {
+        margin: 20px auto;
+    }    
+
+}  /* ^^^ 670px ^^^ */
+    
+
+
+@media (max-width: 568px) {
+    
+    .wrapper {
+         max-width: 460px;
+    }
+    
+    header, 
+    .playing_area_contain, 
+    .games, 
+    .reviews, 
+    .add_review, 
+    .faq, 
+    .affiliate_programs {
+        margin-bottom: 70px;
+    }
+    
+    .all_casinos_background {
+        padding-top: 500px; /* работает в связке с отрицательным margin-top у h1 */
+    }
+    
+    div.all_casinos_background {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        margin-top: -450px;
+        margin-bottom: 30px;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }    
+    
+    .casino_details {
+        margin-top: 100px;
+    }
+    
+    iframe {
+        width: 80vw;
+        height: 53vw;
+    }  
+
+    /* --- Мобильное меню --- */
+    
+    .burger_icon {
+        display: block;
+        color: #fff;
+        font-size: 1.4rem;
+    }
+    
+    .burger_icon:hover {
+        opacity: 0.8;
+        color: #96C93D;
+    }
+    
+    div.phones_adaptive_menu {
+        display: inline-block;
+    }
+    
+    .desktop_tablet_menu {
+        display: none;
+    }
+    
+    .upper_header.topnav {
+        background: transparent;
+    }
+    
+    /*
+    .pokies_best_logo.desktop_tablet_menu {
+        visibility: hidden;
+    }
+    */
+    
+    /* Стиль меню навигации */
+    .topnav {
+        overflow: hidden;
+        /*
+        background: linear-gradient(to bottom, #000B1C 0%, #014D76 100%);
+        */
+        position: relative;
+    }
+    
+    .upper_header {
+        align-items: flex-start;
+        padding-top: 20px;
+        text-align: center;
+    }
+    
+    .upper_header .navigation_links a {
+        margin: 0 auto;
+    }
+    
+    .upper_header .navigation_links {
+        margin-right: 60px;
+    }
+    
+    #header_bttn_ph_adapt {
+        background: #000f22;
+    }
+
+    /* Скрыть ссылки внутри меню навигации (кроме главной/логотип) */
+    .topnav #myLinks {
+        display: none;
+    }
+
+    /* Ссылки меню навигации по стилю */
+    .topnav a {
+        display: block;
+    }
+    
+    .upper_header .navigation_links a {
+        padding-bottom: 15px;
+        border-bottom: none;
+    }
+    
+    .upper_header .navigation_links .bttn_border_gradient a {
+        padding: 20px 50px;
+    }
+    
+    /* ^^^ Мобильное меню ^^^ */
+   
+    
+    header {
+        height: 570px;
+        background-position: 80%;
+    }
+    
+    span.casino_detail {
+        display: ;
+    }
+    
+    .casino_details_contain_item {
+        display: block;
+    }
+    .casino_details_tag_contain {
+        margin-top: 20px;
+    }
+    
+    
+    
+    
+    h2 {
+        font-size: 1.25rem;
+        margin-bottom: 40px;
+    }
+    
+    .best_casinos_list h2 {
+        margin-bottom: 10px;
+    }
+    
+    .features_contain p,
+    .casino_nfo p {
+        font-size: 0.75rem;
+    }
+    
+    .casino_overall_rating_box_header p {
+        font-size: 1rem;
+    }
+    
+    .features .numeral_rating {
+        font-size: 0.875rem;
+    }
+    
+    p.relative_rating, .hr100 + p {
+        font-size: 0.875rem;
+    }
+    
+    .features p {
+        min-width: 140px;
+    }
+    
+    .games_list_item a img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .games .bttn_border_gradient {
+        margin-top: 20px;
+    }
+    
+    .avatar {
+        width: 390px;
+    }
+    
+    .reviews .filters {
+        flex-direction: column;
+    }
+    
+    .select_casino {
+        margin-top: 20px;
+    }
+    
+    .name_and_date_adaptive {
+        flex-wrap: wrap;
+        width: 74%;
+    }
+    
+    .content_block p {
+        padding: 0 20px;        
+    }
+    
+    .faq p, 
+    .accordion {
+        width: 300px;
+    }
+    
+    .australian_flag {
+        left: 320px;
+        width: 160px;
+        height: 160px;
+    }
+    
+    .australia {
+        left: 320px;
+        width: 130px;
+        height: 130px;
+    }
+    
+    .affiliate_programs {
+        flex-direction: column;
+    }
+
+    .affiliate_programs_img {
+        width: 100%;
+        height: 635px;
+    }
+
+    .affiliate_programs p {
+        max-width: 650px;
+    }
+    
+    .links_footer .pokies_best_logo {
+        margin-bottom: 40px;
+        margin-left: 40px;
+    }
+    
+    .pokies_best_logo:hover {
+        transform: translateX(0);
+        filter: opacity(0.6);
+    }
+  
+    .links_footer {
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+    }
+    
+    .subscribing_wrapper_flex_box .subscribing {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    
+    .adaptive_subscribing_ipad_pro_vert {
+        margin-left: 40px;
+    }
+        
+    .upper_bttn {
+        position: relative;
+        top: 200px;
+        right: 50px;
+        box-shadow: 10px 10px 20px rgba(0, 23, 59, 0.25), -10px -10px 20px rgba(13, 48, 84, 0.25);
+    }
+    
+    .email_input {
+        width: 90%
+    }
+    
+    div.background_left_arrow,
+    div.background_right_arrow {
+        width: 100%
+    }
+    
+    .background_left_arrow {
+        left: 0px;/ /* выравнивание фона */
+    }
+    
+    .background_right_arrow {
+        left: 0px;
+        top: -210px;
+    }
+    
+    .games {
+        margin-bottom: 150px;
+    }
+
+    .add_review_content_box p {
+        font-size: 0.875rem;
+    }
+    
+    .add_review h2 + p + p {
+        font-size: 1rem;
+    }
+    
+    .add_review_content_box {
+        width: 100%;
+    }
+    
+    .add_review .features p {
+        margin-bottom: 10px;
+        min-width: 160px;
+    }
+
+    .links_footer {
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .links_footer .pokies_best_logo {
+        position: relative;
+        left: -30px;
+    }
+    
+    .footer_navigation_links {
+        margin: 0 auto 20px;
+        padding: 0;
+    }
+    
+    .reviews_list.hide {
+        height: 550px;
+    }
+    
+} /* ^^^ 568px ^^^ */
+
+
+
+@media (max-width: 472px) {
+    
+    .casinos_list.hide {
+        height: 1380px;
+    }
+    
+    .upper_bttn {
+        top: -200px;
+        left: 145px;
+    }
+    
+    div.background_left_arrow,
+    div.background_right_arrow {
+        height: 200%;
+    }   
+
+    .australia, 
+    .australian_flag {
+        display: none;
+    }
+    
+    .add_review_content_box {
+        width: 100%;
+    }
+    
+    .games_list_item a img {
+        width: 170px;
+        height: 170px;
+    }
+    
+} /* ^^^ 472px ^^^ */
+
+
+
+@media (max-width: 420px) {
+    
+    .casino_list_item {
+        justify-content: center;
+        align-items: flex-start
+    }
+    
+    .casinos_list.hide {
+        height: 2010px;
+    }   
+
+    .list_number + div {
+        width: 68%;
+        margin-bottom: 40px;
+    }
+    
+    .bonus {
+        margin-right: 100px;
+    }
+    
+    .under_logo_rating {
+        margin: 0 auto;
+    }
+    
+    .affiliate_programs_img {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .best_casinos_list {
+        margin-bottom: 70px;
+    }
+
+    .avatar {
+        background-position: center top;
+    }
+    
+    .bttn_center_alignment {
+        margin-top: 20px;
+    }
+    
+    .best_casinos_list .bttn_center_alignment {
+        margin-top: 0;
+    }
+    
+    .bttn {
+        padding: 20px 30px;
+    }
+    
+    .faq_bttns .bttn_border_gradient {
+        margin-left: 0;
+    }
+    
+    .faq_bttns {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content:;
+        align-items: center;
+    }
+    
+    .faq_bttns :first-child a {
+        padding: 15px 30px;
+    }
+    
+    .accordion {
+        width: 100%;
+    }
+    
+    .email_input {
+        width: auto;
+    }
+
+    .links_footer .pokies_best_logo {
+        margin-left: 15px;
+    }    
+    
+    .upper_bttn {
+        top: -210px;
+        left: 120px;
+    }
+    
+    .subscribing_wrapper_flex_box .subscribing {
+        padding: 20px;
+    }
+    
+    .tooltip .tooltiptext {
+        left: -140px;
+    }
+    
+    .tooltip .tooltiptext::after {
+        right: 80px;
+    }
+    
+    .all_casinos_background {
+        padding-top: 650px; /* работает в связке с отрицательным margin-top у h1 */
+        height: 170px;
+    }
+    
+    h1 {
+        margin-top: -600px;
+        margin-bottom: 30px;
+    } 
+    
+    .casino_overall_rating_box_header {
+        margin-right: 20px;
+    }
+    
+} /* ^^^ 420px ^^^ */
+
+
+
+@media (max-width: 414px) {
+    
+    .welcome_banner  div.banner {
+        width: 414px;
+    }
+    
+    .faq_contain,
+    .panel {
+        width: 394px;
+    }
+    
+    footer {
+        margin-left: 30px;
+    }
+    
+    .links_footer {
+        margin-left: 60px;
+    }
+
+    .subscribing_footer {
+        padding-bottom: 15px;
+    }
+
+} /* ^^^ 414px ^^^ */
+
+
+
+@media (max-width: 375px) {
+    
+    .welcome_banner  div.banner {
+        width: 375px;
+        left: -10px;
+    }
+    
+    .banner h2 {
+        left: 130px;
+    }
+    
+    .banner_flex_contain {
+        left: 100px;
+    }
+    
+    .faq_contain,
+    .panel {
+        width: 355px;
+    }
+    
+    footer {
+        margin-left: 10px;
+    }
+    
+    .links_footer {
+        margin-left: 60px;
+    }
+    
+    .games_list a img {
+        width: 165px;
+        height: 165px;
+    }
+    
+} /* ^^^ 375px ^^^ */
+
+    
+
+@media (max-width: 320px) {
+    
+    .wrapper {
+        width: 300px;
+    }
+    
+    iframe {
+        width: 92vw;
+        height: 61vw;
+    }    
+    
+    #header_bttn_ph_adapt {
+        padding: 20px 30px; 
+    }
+    
+    .casino_list_item {
+        padding-top: 0;
+    }
+    
+    .bonus, .games_count {
+        margin-top: 20px;
+    }
+    
+    .bttn {
+        padding: 20px 10px;
+    }
+    
+    .name_and_date_adaptive {
+        flex-direction: column;
+    }
+    
+    .reviews_date {
+        margin-top: 5px;
+    }
+    
+    .affiliate_programs_img {
+        height: 445px;
+    }
+    
+    .links_footer .pokies_best_logo {
+        margin-left: 0px;
+    }
+
+    .email_input {
+        width: 68%;
+    }
+    
+    .add_review .email_input {
+        width: 100%;
+    }
+    
+    .add_review .select_casino {
+        width: 108%;
+    }
+    
+    .subscribing_wrapper_flex_box .subscribing {
+        padding: 0;
+    }
+    
+    .tooltip .tooltiptext {
+        left: -100px;
+    }
+    
+    .tooltip .tooltiptext::after {
+        right: 120px;
+    }
+    
+    .upper_bttn {
+        left: 82px;
+    }
+    
+    .games_list_item a img {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .reviews_list.hide {
+        height: 600px;
+    }
+    
+    .faq_contain,
+    .panel {
+        width: 300px;
+    }
+    
+    footer {
+        margin-left: -15px;
+    }
+    
+    .subscribing_footer h3 {
+        text-align: center;
+    }
+    
+    div.subscribing_wrapper_flex_box .email_input, .subscribing_wrapper_flex_box .bttn_border_gradient {
+        margin: 10px auto;
+        
+    }
+    
+    .links_footer {
+        margin-left: 60px;
+    }
+    
+    .panel p {
+        width: 100%;
+    }
+     
+}  /* ^^^ 320px ^^^ */

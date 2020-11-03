@@ -1,0 +1,1076 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #002347;
+    color: #fff;
+}
+
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+    background-color: red;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    margin: 0;
+}
+
+p {
+    line-height: 140%;
+    opacity: 0.8;
+    margin-bottom: 0.625rem;
+}
+
+header, 
+.article,
+section.comments,
+section.add_comment,
+.blog_articles_previews, 
+.affiliate_programs {
+    margin-bottom: 150px;
+}
+
+
+
+/* --- Шапка --- */ 
+
+.upper_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.burger_icon, 
+div.phones_adaptive_menu {
+    display: none;
+}
+
+i.burger {
+    position: absolute;
+}
+
+.pokies_best_logo {
+    background-image: url(../images/logos/pokies_best_logo.png);
+    background-repeat: no-repeat;
+    width: 87px;
+    height: 63px;
+    transition: 0.7s;
+}
+
+.pokies_best_logo:hover {
+    transform: scale(1.2) translateX(10px);
+    filter: opacity(0.6);
+}
+
+.bttn_border_gradient {
+    background: linear-gradient(90deg, #00B09B 0%, #96C93D 100%);
+    padding: 1px; /* Толщина границы */
+    min-height: 56px;
+    border-radius: 3px;
+}
+
+.bttn_background {
+    background: #002347;
+}
+
+.bttn {
+    padding: 20px 50px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.bttn_border_gradient, 
+.bttn_background, 
+.bttn {
+    display: inline-block;
+}
+
+.navigation_links {
+    text-transform: capitalize;
+}
+
+.navigation_links a {
+    margin-right: 50px;
+}
+
+.navigation_links a:nth-child(3) {
+    margin-right: 0;
+}
+
+.navigation_links a:hover {
+    color: #96C93D;
+    border-bottom: 3px solid #96C93D;
+	padding-bottom: 20px;
+    transition: 0.4s
+}
+
+.navigation_links a, 
+.bttn {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bttn:hover,
+#header_bttn:hover {
+    background: linear-gradient(90deg, #00B09B 0%, #96C93D 100%);
+    box-shadow: 2px 2px 30px #87C646;
+    transition: 0.1s;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.select:hover {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 3.4375rem;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.article_image {
+    background-image: url(../images/articles_images/main_article_image.png);
+    background-size: 100% auto;
+    height: 440px;
+    max-width: 780px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.article_description {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.article_description h3 {
+    margin-bottom: 20px;
+    font-size: 1.125rem;
+}
+
+
+
+/* --- кнопки + описание заголовков --- */ 
+
+.play_now_bttn {
+    background: linear-gradient(90deg, #00B09B 0%, #96C93D 100%);
+}
+
+.play_now_bttn:hover {
+    box-shadow: 2px 2px 30px #87C646;
+    transition: 0.1s;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 70px;
+}
+
+
+
+/* --- Add a Comment --- */
+
+
+.add_comment, .comments {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.add_review_content_box {
+    width: 70%;
+}
+
+.add_review .subscribing {
+    width: 90%;
+}
+
+.add_review .email_input, 
+.save_data_agree {
+    margin: 0 0 20px;
+    font-size: 0.875rem;
+}
+
+.save_data_agree input {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 3px;
+}
+
+textarea {
+    height: 160px;
+}
+
+
+
+/* --- Comments --- */ 
+
+
+.photo_n_date_container {
+    display: flex;
+    align-items: center;
+}
+
+.comments_container_data {
+    display: flex;
+}
+
+.comments_container_data .name {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.content_block {
+    width: 95%;
+}
+
+.content_block p {
+    padding-bottom: 20px;
+}
+
+.comments .date {
+	color: #717171;
+}
+
+
+/* скрытие текста */
+
+.content_block {
+	overflow: hidden;
+	position: relative;    
+}
+
+.content_block.hide {
+	height: 82px;
+}
+
+.content_block.hide:after{
+	content: "";
+	display: block;
+	height: 30px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    /*
+	background-image: linear-gradient(to bottom, #00173B 0%, #0D3054 40%);
+    */
+}
+
+/* Ссылка-Кнопка */
+
+.content_toggle {
+	display: inline-block;
+	padding: 15px 20px;
+	text-decoration: none;
+	color: #fff;
+    margin-top: 20px;
+	margin-bottom: 20px;
+    text-decoration: underline;
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.content_toggle:hover {
+	color: #fff;
+	background-color: #a776c8;
+    border-radius: 5px;
+    opacity: 1;
+}
+.content_toggle:active {
+	background: #34106d;
+}
+
+
+/* --- переключение отзывов --- */  
+            
+            
+/* Контейнер отзывов */
+.slideshow_container {
+    position: relative;
+    margin: auto;
+}            
+
+.mySlides {
+    display: none;
+    width: 100%;
+}
+
+/* Вперёд и назад кнопки */
+
+.prev {
+    background-image: url(../images/icons/arrow_left_icon.png);
+    left: -10%; /* Положение "prev кнопки" слева */
+}       
+
+.next {
+    background-image: url(../images/icons/arrow_right_icon.png);
+    right: -10%; /* Положение "next кнопки" справа */
+}
+
+.prev, .next {
+    width: 47px;
+    height: 47px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+    position: absolute;
+    top: 50%; /* выравнивание по центру блока */
+
+    margin-top: -22px;
+    padding: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+    opacity: 0.7;
+    filter: sepia(0.4);
+}
+
+/* --- Точки / круги --- */
+.dot_contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 5px;
+    border: 1px solid #A776C8;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+}
+
+.slideshow_container .active {
+    background-color: #A776C8;
+    height: 11px;
+    width: 11px;
+}
+
+.dot:hover {
+    background-color: #717171;
+    height: 10px;
+    width: 10px;
+    transition: 0.2s ease;
+}
+
+/* Анимация исчезновения */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .3}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .3}
+    to {opacity: 1}
+}
+
+/* ^^^ Анимация исчезновения ^^^ */
+
+
+.blog_articles_preview_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.views::before {
+    content: url(../images/icons/views.png);
+}
+
+.comments_count::before {
+    content: url(../images/icons/comments.png);
+}
+
+.views::before, 
+.comments_count::before {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+    right: 5px;
+}
+
+.publications_data {
+    display: flex;
+    align-items: baseline;  
+    margin: 10px 0;
+}
+
+.publications_data div {
+    margin-right: 20px;
+}
+
+.publications_data div:last-child {
+    margin-right: 0;
+}
+
+.publications_data {
+    color: #89898A;
+}
+
+.comment_bttn {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* --- Affiliate Programs --- */
+
+.affiliate_programs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.affiliate_programs_img {
+    background-image: url(../images/backgrounds/brisbane-australia-dec-23-2016-colorful-fireworks--P55CDF6%201.png);
+    width: 458px;
+    height: 635px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.affiliate_programs p {
+    max-width: 650px;
+}
+
+.blog_articles_previews h2 {
+    text-align: center;
+}
+
+.blog_articles_previews h3 {
+    font-size: 1.25rem;
+}
+
+.blog_articles_preview {
+    max-width: 32%;
+    overflow: hidden;
+}
+
+
+/* --- Подвал --- */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+   	align-items: flex-start;
+    padding-bottom: 85px;
+}
+
+footer h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.subscribing {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.footer_navigation_links {
+    list-style-type: none;
+    margin-top: 0;
+}
+
+.footer_navigation_links li a:hover {
+    border-bottom: 3px solid #CBA982;
+	padding-bottom: 5px;
+    color: #96C93D;
+    border-bottom: 3px solid #96C93D;
+}
+
+.footer_navigation_links li {
+    margin-top: 15px;
+}
+
+.footer_navigation_links li:first-child {
+    margin-top: 0;
+}
+
+.email_subscribing_bttn {
+    margin-top: 20px;
+}
+
+.email_subscribing_bttn:hover {
+
+}
+
+.email_input {
+    padding: 15px 10px;
+    border-color: #00B09B;
+    border-radius: 10px;
+    background: linear-gradient(91.6deg, #0D2C5E 0%, #173E66 100%);
+    opacity: 0.8;
+    color: #fff;    
+}
+
+.subscribing .bttn_border_gradient {
+    margin-top: 20px;
+}
+
+.upper_bttn {
+    background-image: url(../images/icons/upper_bttn.png);
+    width: 55px;
+    height: 55px;
+}
+
+.upper_bttn:hover {
+    filter: opacity(0.82);
+    transition: 0.5s;
+}
+
+.adaptive_subscribing {
+    display: none;
+}
+
+.adaptive_subscribing_ipad_pro_vert {
+    display: none;
+}
+
+.subscribing_footer {
+    margin-top: -100px; /* уменьшает отступ до низа страницы */
+}
+
+
+
+/* Тень для нескольких элементов */
+
+.burger_icon, 
+.email_input {
+	box-shadow: 10px 10px 20px rgba(0, 23, 59, 0.25), -10px -10px 20px rgba(13, 48, 84, 0.25);
+}
+
+
+
+/* --- Адаптив --- */
+
+@media (max-width: 1194px) {
+    
+    .wrapper {
+        max-width: 960px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+      
+    header, 
+    .article,
+    section.comments,
+    section.add_comment,
+    .blog_articles_previews, 
+    .affiliate_programs {
+        margin-bottom: 100px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2.25rem;
+        margin-bottom: 50px;
+    }
+
+    .affiliate_programs_img {
+        width: 307px;
+        height: 425px;
+    }
+    
+    .desktop_subscribing {
+        display: none;
+    }
+    
+    .adaptive_subscribing {
+        display: block;
+    }
+    
+    .dot {
+        display: inline-block;
+    }
+    
+    .prev,
+    .next {
+        display: none;
+    }
+ 
+    .affiliate_programs_description p {
+        font-size: 0.875rem;
+        max-width: 590px;
+    }
+    
+} /* ^^^ 1194px ^^^ */
+
+
+
+@media (max-width: 834px) {
+    
+    .wrapper {
+        max-width: 720px;
+    }
+    
+    .article_image {
+        margin-bottom: 20px;
+    }
+    
+    .blog_articles_preview {
+        min-width: 32%;
+    }
+
+    .blog_articles_preview_container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    h2 {
+        margin-bottom: 20px;
+    }
+    
+    .affiliate_programs h2 {
+        margin-bottom: 50px;
+    }
+    
+    .bttn {
+        font-size: 0.875rem;
+    }
+    
+    .adaptive_subscribing {
+        display: none;
+    }
+    
+    .adaptive_subscribing_ipad_pro_vert {
+        display: block;
+    }
+    
+    .subscribing_wrapper_flex_box .subscribing {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    
+    .adaptive_subscribing_ipad_pro_vert .email_input {
+        margin-right: 20px;
+    }
+    
+    .subscribing_footer {
+        margin-top: -60px;
+    }
+    
+} /* ^^^ 834px ^^^ */
+ 
+
+
+@media (max-width: 568px) {
+    
+    .wrapper {
+         max-width: 460px;
+    }
+    
+    header, 
+    .article,
+    section.comments,
+    section.add_comment,
+    .blog_articles_previews, 
+    .affiliate_programs {
+        margin-bottom: 70px;
+    }
+    
+    /* --- Мобильное меню --- */
+    
+    .burger_icon {
+        display: block;
+        color: #fff;
+        font-size: 1.4rem;
+    }
+    
+    .burger_icon:hover {
+        opacity: 0.8;
+        color: #96C93D;
+    }
+    
+    div.phones_adaptive_menu {
+        display: inline-block;
+    }
+    
+    .desktop_tablet_menu {
+        display: none;
+    }
+    
+    .upper_header.topnav {
+        background: transparent;
+    }
+    
+    /*
+    .pokies_best_logo.desktop_tablet_menu {
+        visibility: hidden;
+    }
+    */
+    
+    /* Стиль меню навигации */
+    .topnav {
+        overflow: hidden;
+        /*
+        background: linear-gradient(to bottom, #000B1C 0%, #014D76 100%);
+        */
+        position: relative;
+    }
+    
+    .upper_header {
+        align-items: flex-start;
+        padding-top: 20px;
+        text-align: center;
+    }
+    
+    .upper_header .navigation_links a {
+        margin: 0 auto;
+    }
+    
+    .upper_header .navigation_links {
+        margin-right: 60px;
+    }
+    
+    #header_bttn_ph_adapt {
+        background: #000f22;
+    }
+
+    /* Скрыть ссылки внутри меню навигации (кроме главной/логотип) */
+    .topnav #myLinks {
+        display: none;
+    }
+
+    /* Ссылки меню навигации по стилю */
+    .topnav a {
+        display: block;
+    }
+    
+    .upper_header .navigation_links a {
+        padding-bottom: 15px;
+        border-bottom: none;
+    }
+    
+    .upper_header .navigation_links .bttn_border_gradient a {
+        padding: 20px 50px;
+    }
+    
+    /* ^^^ Мобильное меню ^^^ */
+
+    h1 {
+        font-size: 1.5rem;
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .article_image {
+        margin-top: -60px;
+        margin-bottom: -60px;
+    }
+        
+    h2 {
+        font-size: 1.25rem;
+        margin-bottom: 40px;
+    }
+    
+    .photo_n_date_container {
+        align-items: flex-end;
+    }
+
+     .comments_container_data {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    
+    .comments_container_data .name {
+        margin: 10px 0;
+        font-size: 1rem;
+    }
+    
+    .comments_container_data .date {
+        font-size: 0.875rem;
+    }
+    
+    .content_block p {
+        padding: 0 20px;        
+    }
+  
+    .blog_articles_preview_container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .blog_articles_preview {
+        min-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .blog_articles_previews h3 {
+        font-size: 1.125rem;
+    }
+    
+    .blog_articles_previews .publications_data {
+        font-size: 0.875rem;
+    }
+    
+    .affiliate_programs {
+        flex-direction: column;
+    }
+
+    .affiliate_programs_img {
+        width: 100%;
+        height: 635px;
+    }
+
+    .affiliate_programs p {
+        max-width: 650px;
+    }
+    
+    .links_footer .pokies_best_logo {
+        margin-bottom: 40px;
+        margin-left: 40px;
+    }
+    
+    .pokies_best_logo:hover {
+        transform: translateX(0);
+        filter: opacity(0.6);
+    }
+  
+    .links_footer {
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+    }
+    
+    .subscribing_wrapper_flex_box .subscribing {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    
+    .adaptive_subscribing_ipad_pro_vert {
+        margin-left: 40px;
+    }
+        
+    .upper_bttn {
+        position: relative;
+        top: 200px;
+        right: 50px;
+        box-shadow: 10px 10px 20px rgba(0, 23, 59, 0.25), -10px -10px 20px rgba(13, 48, 84, 0.25);
+    }
+    
+    .email_input {
+        width: 90%
+    }
+    
+    .links_footer {
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .links_footer .pokies_best_logo {
+        position: relative;
+        left: -30px;
+    }
+    
+    .add_review_content_box p {
+        font-size: 0.875rem;
+    }
+    
+    .add_review h2 + p + p {
+        font-size: 1rem;
+    }
+    
+    .add_review_content_box {
+        width: 100%;
+    }
+    
+} /* ^^^ 568px ^^^ */
+
+
+
+@media (max-width: 472px) {
+    
+    .footer_navigation_links {
+        margin: 0 auto 20px;
+        padding: 0;
+    }
+    
+    .links_footer .pokies_best_logo {
+        margin-left: 25px;
+    }
+    
+     .upper_bttn {
+        top: 150px;
+        left: 365px;
+    }
+    
+    .upper_bttn {
+        top: -200px;
+        left: 145px;
+    }
+    
+    .add_review_content_box {
+        width: 100%;
+    }
+    
+} /* ^^^ 472px ^^^ */
+
+
+
+@media (max-width: 420px) {
+
+    .affiliate_programs_img {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .reviews {
+        margin-bottom: 0;
+    }
+    
+    .bttn {
+        padding: 20px 30px;
+    }
+    
+    .email_input {
+        width: auto;
+    }
+
+    .links_footer .pokies_best_logo {
+        margin-left: 0;
+    }    
+    
+    .subscribing_wrapper_flex_box .subscribing {
+        padding: 20px;
+    }
+    
+     .upper_bttn {
+        top: -210px;
+        left: 120px;
+    }
+    
+} /* ^^^ 420px ^^^ */
+
+
+
+@media (max-width: 414px) {
+    
+    footer {
+        margin-left: 30px;
+    }
+    
+    .links_footer {
+        margin-left: 60px;
+    }
+
+    .subscribing_footer {
+        padding-bottom: 15px;
+    }
+
+} /* ^^^ 414px ^^^ */
+
+
+
+@media (max-width: 375px) {
+    
+    footer {
+        margin-left: 10px;
+    }
+    
+    .links_footer {
+        margin-left: 60px;
+    }
+    
+} /* ^^^ 375px ^^^ */
+
+
+
+@media (max-width: 320px) {
+    
+    .wrapper {
+        width: 300px;
+    }
+    
+    #header_bttn_ph_adapt {
+        padding: 20px 30px; 
+    }
+ 
+    .bttn {
+        padding: 20px 10px;
+    }
+    
+    .affiliate_programs_img {
+        height: 445px;
+    }
+
+    .email_input {
+        width: 68%;
+    }
+    
+    .add_review .email_input {
+        width: 90%;
+    }
+
+    .subscribing_wrapper_flex_box .subscribing {
+        padding: 0;
+    }
+    
+    .upper_bttn {
+        left: 82px;
+    }
+    
+    footer {
+        margin-left: -15px;
+    }
+    
+    .subscribing_footer h3 {
+        text-align: center;
+    }
+    
+    div.subscribing_wrapper_flex_box .email_input, .subscribing_wrapper_flex_box .bttn_border_gradient {
+        margin: 10px auto;
+        
+    }
+    
+    .links_footer {
+        margin-left: 60px;
+    }
+ 
+}  /* ^^^ 320px ^^^ */

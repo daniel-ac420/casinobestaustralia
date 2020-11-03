@@ -1,0 +1,338 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #002347;
+    color: #fff;
+    
+}
+
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+    background-color: ; /*red*/
+}
+
+
+
+/* --- Шапка --- */ 
+
+.upper_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.burger_icon, 
+div.phones_adaptive_menu {
+    display: none;
+}
+
+i.burger {
+    position: absolute;
+}
+
+.pokies_best_logo {
+    background-image: url(../images/logos/pokies_best_logo.png);
+    background-repeat: no-repeat;
+    width: 87px;
+    height: 63px;
+    transition: 0.7s;
+}
+
+.pokies_best_logo:hover {
+    transform: scale(1.2) translateX(10px);
+    filter: opacity(0.6);
+}
+
+.bttn_border_gradient {
+    background: linear-gradient(90deg, #00B09B 0%, #96C93D 100%);
+    padding: 1px; /* Толщина границы */
+    min-height: 56px;
+    border-radius: 3px;
+}
+
+.bttn_background {
+    background: #000102;
+}
+
+.bttn {
+    padding: 20px 50px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.bttn_border_gradient, 
+.bttn_background, 
+.bttn {
+    display: inline-block;
+}
+
+.navigation_links {
+    text-transform: capitalize;
+}
+
+.navigation_links a {
+    margin-right: 50px;
+}
+
+.navigation_links a:nth-child(3) {
+    margin-right: 0;
+}
+
+.navigation_links a:hover {
+    color: #96C93D;
+    border-bottom: 3px solid #96C93D;
+	padding-bottom: 20px;
+    transition: 0.4s
+}
+
+.navigation_links a, 
+.bttn {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bttn:hover {
+    background: linear-gradient(90deg, #00B09B 0%, #96C93D 100%);
+    box-shadow: 2px 2px 30px #87C646;
+    transition: 0.1s;
+}
+
+.select:hover {
+    cursor: pointer;
+}
+
+.burger_icon {
+	box-shadow: 10px 10px 20px rgba(0, 23, 59, 0.25), -10px -10px 20px rgba(13, 48, 84, 0.25);
+}
+
+
+
+/* --- 404 --- */
+
+.nothing_here_content_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 0;
+}
+
+.nothing_here_australia_logo {
+    background-image: url(../images/404/404.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 694px;
+    height: 482px;
+}
+
+
+.play_now_bttn {
+    background: linear-gradient(90deg, #00B09B 0%, #96C93D 100%);
+}
+
+.play_now_bttn:hover {
+    box-shadow: 2px 2px 30px #87C646;
+    transition: 0.1s;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 140%;
+    max-width: 360px; 
+    margin: 0; /* обнуление margin */
+    margin-bottom: 70px;
+}
+
+
+
+/* --- Адаптив --- */
+
+@media (max-width: 1194px) {
+    
+    .wrapper {
+        max-width: 960px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .nothing_here_content_box {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 100px 0;
+    }
+    
+    .nothing_here_australia_logo {
+        width: 610px;
+        height: 424px;
+    }
+
+    h2 {
+        margin-bottom: 50px;
+        font-size: 2.25rem;
+    }
+    
+    .bttn {
+        font-size: 0.875rem;
+    }
+    
+} /* ^^^ 1194px ^^^ */
+
+
+
+@media (max-width: 834px) {
+    
+    .wrapper {
+        max-width: 720px;
+    }
+
+    
+} /* ^^^ 834px ^^^ */
+
+
+
+@media (max-width: 568px) {
+    
+    .wrapper {
+         max-width: 460px;
+    }
+    
+    .nothing_here_content_box {
+        flex-direction: row;
+        text-align: left;
+        padding: 70px 0;
+    }
+    
+    .nothing_here_australia_logo {
+        width: 232px;
+        height: 162px;
+    }
+
+    h2 {
+        margin-bottom: 40px;
+        font-size: 1.5rem;
+        max-width: 185px;
+    }
+    
+    
+    /* --- Мобильное меню --- */
+    
+    .burger_icon {
+        display: block;
+        color: #fff;
+        font-size: 1.4rem;
+    }
+    
+    .burger_icon:hover {
+        opacity: 0.8;
+        color: #96C93D;
+    }
+    
+    div.phones_adaptive_menu {
+        display: inline-block;
+    }
+    
+    .desktop_tablet_menu {
+        display: none;
+    }
+    
+    .upper_header.topnav {
+        background: transparent;
+    }
+    
+    /* Стиль меню навигации */
+    .topnav {
+        overflow: hidden;
+        /*
+        background: linear-gradient(to bottom, #000B1C 0%, #014D76 100%);
+        */
+        position: relative;
+    }
+    
+    .upper_header {
+        align-items: flex-start;
+        padding-top: 20px;
+        text-align: center;
+    }
+    
+    .upper_header .navigation_links a {
+        margin: 0 auto;
+    }
+    
+    .upper_header .navigation_links {
+        margin-right: 60px;
+    }
+    
+    #header_bttn_ph_adapt {
+        background: #000f22;
+    }
+
+    /* Скрыть ссылки внутри меню навигации (кроме главной/логотип) */
+    .topnav #myLinks {
+        display: none;
+    }
+
+    /* Ссылки меню навигации по стилю */
+    .topnav a {
+        display: block;
+    }
+    
+    .upper_header .navigation_links a {
+        padding-bottom: 15px;
+        border-bottom: none;
+    }
+    
+    .upper_header .navigation_links .bttn_border_gradient a {
+        padding: 20px 50px;
+    }
+    
+    /* ^^^ Мобильное меню ^^^ */
+    
+} /* ^^^ 568px ^^^ */
+
+
+
+@media (max-width: 375px) {
+    
+    .bttn {
+        padding: 20px 20px;
+    }
+    
+}
+
+
+
+
+@media (max-width: 320px) {
+    
+    .wrapper {
+        width: 300px;
+    }
+    
+    .nothing_here_content_box {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .nothing_here_australia_logo {
+        width: 270px;
+        height: 188px;
+    }
+
+    h2 {
+        max-width: 260px;
+    }
+    
+    .header_bttn_ph_adapt {
+        display: none;
+    }
+    
+    .bttn_border_gradient.phones_adaptive_menu .bttn_background .bttn {
+        padding: 20px 20px;
+    }
+ 
+}  /* ^^^ 320px ^^^ */
