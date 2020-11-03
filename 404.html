@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru"> <!-- временно для предпросмотра без переключения языка -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>404 Oops, nothing here</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/404_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <header class="nothing_here_header">
+            <div class="upper_header topnav">
+
+                <a href="index.html" class="pokies_best_logo desktop_tablet_menu"></a>
+
+                <div class="navigation_links" id="myLinks">
+                    <a href="all_casinos.html" title="Casinos">casinos</a>
+                    <a href="all_games.html" title="Games">games</a>
+                    <a href="#" title="Bonuses">bonuses</a>
+                    <div class="bttn_border_gradient phones_adaptive_menu">
+                        <div class="bttn_background">
+                            <a href="#" class="bttn" id="header_bttn_ph_adapt">log in</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bttn_border_gradient desktop_tablet_menu">
+                    <div class="bttn_background">
+                        <a href="#" class="bttn" id="header_bttn">log in</a>
+                    </div>
+                </div>
+
+                <a href="javascript:void(0);" class="burger_icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+
+            </div>
+        </header>
+        
+        
+        <section class="nothing_here_content_box">
+            <div class="nothing_here_content">
+                <h2>Oops, nothing here</h2>
+                <div class="bttn_border_gradient">
+                    <div class="bttn_background">
+                        <a href="index.html" class="bttn play_now_bttn">go home</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nothing_here_australia_logo"></div>
+        </section>
+        
+            
+            <footer class="">
+                
+            </footer>
+            
+        </div> <!-- wrapper closed div -->
+	
+    <!-- скрипты -->
+    
+    
+    <!--  Переключение между отображением и скрытием ссылок меню навигации, когда пользователь нажимает на значок гамбургера -->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+    </script>
+    
+</body>
+</html>	
